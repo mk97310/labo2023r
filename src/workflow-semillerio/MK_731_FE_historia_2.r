@@ -17,13 +17,13 @@ require("lightgbm")
 
 # Parametros del script
 PARAM <- list()
-PARAM$experimento <- "MK_FE7310_1" # le anulé el Random Forest
+PARAM$experimento <- "MK_FE7310_2" # activo random forest, 3 lags y canaritos en 1.5
 
 PARAM$exp_input <- "MK_DR7210"
 
 PARAM$lag1 <- TRUE
 PARAM$lag2 <- TRUE
-PARAM$lag3 <- FALSE
+PARAM$lag3 <- TRUE
 
 PARAM$Tendencias1$run <- TRUE
 PARAM$Tendencias1$ventana <- 6
@@ -35,7 +35,7 @@ PARAM$Tendencias1$ratioavg <- FALSE
 PARAM$Tendencias1$ratiomax <- FALSE
 
 PARAM$Tendencias2$run <- FALSE
-PARAM$Tendencias2$ventana <- 6
+PARAM$Tendencias2$ventana <- 12    #Aumento de 6 a 12
 PARAM$Tendencias2$tendencia <- TRUE
 PARAM$Tendencias2$minimo <- FALSE
 PARAM$Tendencias2$maximo <- FALSE
@@ -43,9 +43,17 @@ PARAM$Tendencias2$promedio <- FALSE
 PARAM$Tendencias2$ratioavg <- FALSE
 PARAM$Tendencias2$ratiomax <- FALSE
 
+PARAM$Tendencias3$run <- FALSE
+PARAM$Tendencias3$ventana <- 18      #Aumento de 6 a 18
+PARAM$Tendencias3$tendencia <- TRUE
+PARAM$Tendencias3$minimo <- FALSE
+PARAM$Tendencias3$maximo <- FALSE
+PARAM$Tendencias3$promedio <- FALSE
+PARAM$Tendencias3$ratioavg <- FALSE
+PARAM$Tendencias3$ratiomax <- FALSE
 
-PARAM$RandomForest$run <- FALSE 
-PARAM$RandomForest$num.trees <- 20
+PARAM$RandomForest$run <- TRUE 
+PARAM$RandomForest$num.trees <- 50 # Aumento de 20 a 50
 PARAM$RandomForest$max.depth <- 4
 PARAM$RandomForest$min.node.size <- 1000
 PARAM$RandomForest$mtry <- 40
@@ -53,7 +61,7 @@ PARAM$RandomForest$semilla <- 387763 # cambiar por la propia semilla
 
 
 # varia de 0.0 a 2.0, si es 0.0 NO se activan
-PARAM$CanaritosAsesinos$ratio <- 0.0
+PARAM$CanaritosAsesinos$ratio <- 1.5
 # desvios estandar de la media, para el cutoff
 PARAM$CanaritosAsesinos$desvios <- 4.0
 # cambiar por la propia semilla
