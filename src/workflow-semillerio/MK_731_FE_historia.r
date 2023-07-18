@@ -17,7 +17,7 @@ require("lightgbm")
 
 # Parametros del script
 PARAM <- list()
-PARAM$experimento <- "MK_FE7310_E1" # le anulé el Random Forest
+PARAM$experimento <- "MK_FE7310_1" # le anulé el Random Forest
 
 PARAM$exp_input <- "MK_DR7210"
 
