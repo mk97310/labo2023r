@@ -33,7 +33,7 @@ PARAM$modelos_rank <- c(1)
 PARAM$semillerio <- 20
 
 # se utiliza para generar el vector de  PARAM$semillerio  semillas
-PARAM$semilla_primos <- 102191
+PARAM$semilla_primos <- 387763
 
 PARAM$kaggle$envios_desde <- 9500L
 PARAM$kaggle$envios_hasta <- 11500L
