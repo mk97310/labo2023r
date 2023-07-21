@@ -1,4 +1,4 @@
-# Hibridacion de semillerios
+ Hibridacion de semillerios
 # Corre en apenas segundos
 # El metodo simple  es el promedio simple de las probabilidades
 #  de los semmillerios
