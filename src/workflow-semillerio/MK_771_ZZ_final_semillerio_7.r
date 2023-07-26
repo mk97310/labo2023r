@@ -20,7 +20,7 @@ require("lightgbm")
 
 # Parametros del script
 PARAM <- list()
-PARAM$experimento <- "MK_ZZ7710_3"
+PARAM$experimento <- "MK_ZZ7710_7"
 PARAM$exp_input <- "MK_HT7510_2"
 
 # Que modelos quiero, segun su posicion en el ranking
@@ -30,7 +30,7 @@ PARAM$modelos_rank <- c(1)
 # cantidad de semillas a utilizar en el semillerio,
 #  podrian ser 50 o 100 para mayor estabilidad
 #  semillerio <- 1  es el ZZ_final  tradicional
-PARAM$semillerio <- 90
+PARAM$semillerio <- 35
 
 # se utiliza para generar el vector de  PARAM$semillerio  semillas
 PARAM$semilla_primos <- 387763
