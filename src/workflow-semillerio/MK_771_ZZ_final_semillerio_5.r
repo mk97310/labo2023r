@@ -20,8 +20,8 @@ require("lightgbm")
 
 # Parametros del script
 PARAM <- list()
-PARAM$experimento <- "MK_ZZ7710_4"
-PARAM$exp_input <- "MK_HT7510_4"
+PARAM$experimento <- "MK_ZZ7710_5"
+PARAM$exp_input <- "MK_HT7510_0"
 
 # Que modelos quiero, segun su posicion en el ranking
 # de la Bayesian Optimizacion, ordenado por ganancia descendente
