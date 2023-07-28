@@ -34,7 +34,7 @@ PARAM$Tendencias1$promedio <- FALSE
 PARAM$Tendencias1$ratioavg <- FALSE
 PARAM$Tendencias1$ratiomax <- FALSE
 
-PARAM$Tendencias2$run <- FALSE
+PARAM$Tendencias2$run <- TRUE
 PARAM$Tendencias2$ventana <- 12    #Aumento de 6 a 12
 PARAM$Tendencias2$tendencia <- TRUE
 PARAM$Tendencias2$minimo <- FALSE
@@ -43,7 +43,7 @@ PARAM$Tendencias2$promedio <- FALSE
 PARAM$Tendencias2$ratioavg <- FALSE
 PARAM$Tendencias2$ratiomax <- FALSE
 
-PARAM$Tendencias3$run <- FALSE
+PARAM$Tendencias3$run <- TRUE
 PARAM$Tendencias3$ventana <- 18      #Aumento de 6 a 18
 PARAM$Tendencias3$tendencia <- TRUE
 PARAM$Tendencias3$minimo <- FALSE
